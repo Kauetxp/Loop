@@ -1,16 +1,18 @@
 palavra = str(input("Escreva uma palavra: "))
 palavra = palavra.upper()
+linha = ""
 
 for l in palavra:
-    if l == "A":
+    if str(l) == "A":
         continue
-    elif l == "E":
+    elif str(l) == "E":
         continue
-    elif l == "I":
+    elif str(l) == "I":
         continue
-    elif l == "O":
+    elif str(l) == "O":
         continue
-    elif l == "U":
+    elif str(l) == "U":
         continue
     else:
-        print(l)
+        linha += l
+print(linha)
