@@ -1,6 +1,6 @@
-tentativas = 1
+tentativas = 3
 
-while tentativas <=3:
+while tentativas >=1:
     senha = "poipoi123"
     tentasenha = str(input("Digite a senha: "))
     
@@ -9,7 +9,8 @@ while tentativas <=3:
         break
     else:
         print("Senha incorreta, tente novamente.")
-        tentativas+=1
+        tentativas-=1
+        print("Restam",tentativas,"tentativas.")
 else:
     print("Núméro de tentativas excedido!")
     
